@@ -61,7 +61,7 @@ img {
 }
 
 .col {
-  min-height: 40px;  /*****DEBUG****/
+  /* min-height: 40px;  ****DEBUG*** */
 }
   
 /*******MAIN**********/
@@ -101,6 +101,12 @@ list-style: none;
   font-weight: bold;
   }
 
+.menu ul li a{
+  text-decoration: none;
+  color: #656565;
+
+    }
+
 .deck {
   padding: 10px;
   width: 100%;
@@ -129,5 +135,60 @@ footer {
 }
 
 footer .footer-container {
+  display: flex;
   height: 90px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+footer .card{
+  padding: 20px;
+  max-height: 90px;
+  align-items: center;
+}
+
+
+footer .card div{
+  padding: 15px;
+}
+
+footer .info-brano {
+ 
+}
+
+
+span.gruppo {
+color: white;
+font-size: 0.8rem;
+font-weight: bold;
+}
+
+span.brano {
+color: #656565;
+font-weight: bold;
+font-size: 0.6rem;
+}
+
+ul.d-flex {
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul.d-flex li {
+  color: white;
+  padding: 20px 20px;
+  font-size: 1.5rem;
+}
+
+footer ul.d-flex li:nth-child(3){
+  font-size: 3rem;
+  vertical-align: center;
+  line-height: 100%;
+}
+
+div.left-icons i.fa-heart{
+  padding-right: 10px;
 }
