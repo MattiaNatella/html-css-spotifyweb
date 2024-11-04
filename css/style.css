@@ -57,12 +57,6 @@ img {
 }
 
 
-
-
-
-
-
-
 /*******MAIN**********/
 
 
@@ -82,7 +76,6 @@ img {
 .main-center {
   height: 100%;
   padding: 10px;
-  width: calc(100% - 230px);
 }
 
 .menu ul {
@@ -121,10 +114,21 @@ div.card.tonda img{
 /*******SIDEBAR******/
 
 aside {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 0px 20px;
   width: 230px;
-  height: 100%;
   background-color: #000000;
+}
+
+
+ul.list-playlist {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+aside h2 {
+  padding-left: 0px;
 }
 
 aside .logo img{
@@ -138,15 +142,9 @@ aside ul {
 }
 
 aside ul li{
-  padding: 8px 10px;
+  padding: 10px 0px;
   width: 100%;
   vertical-align: middle;
-}
-
-i.fa-plus-square {
-  font-size: 3rem;
-  color: #A3A3A3;
-  
 }
 
 
@@ -161,10 +159,44 @@ aside ul li a{
 
 }
 
+i.fa-plus-square {
+  font-size: 3rem;
+  color: #A3A3A3;
+  vertical-align: middle;
+  
+}
+
 a img {
   width: 30px;
   vertical-align: middle;
 
+}
+
+
+i.fa-arrow-alt-circle-down {
+  margin-right: 10px;
+}
+
+.user span {
+  font-weight: bold;
+}
+
+span.nome-utente {
+  color: white;
+}
+
+.user hr {
+
+  margin: 10px 0 5px 0;
+}
+
+.user img {
+  width: 30px;
+  height: 30px;
+  margin: 5px 5px 5px 0px;
+  background-color: gray;
+  border-radius: 50%;
+  vertical-align: middle;
 }
 
 
@@ -239,6 +271,11 @@ footer .elapse {
   padding: 10px 0 10px 0;
 }
 
+footer .elapse span {
+  color: #FEFEFE;
+  font-weight: bold;
+}
+
 footer .elapse-bar {
   background-color: grey;
   height: 6px;
@@ -311,3 +348,4 @@ div.left-icons {
 div.left-icons i {
   padding: 5px;
 }
+
