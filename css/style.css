@@ -96,14 +96,14 @@ img {
 }
 
 .main-center {
-  height: 100%;
+  max-width: 100%;
   padding: 10px;
 }
 
 .menu ul {
-justify-content: center;
-padding: 10px;
-list-style: none;
+  justify-content: center;
+  padding: 10px;
+  list-style: none;
 }
 
 .menu ul li{
@@ -120,7 +120,7 @@ list-style: none;
 
 .deck {
   padding: 10px;
-  width: 100%;
+  max-width: 100%;
 }
 
 .card {
@@ -227,7 +227,11 @@ span.nome-utente {
   vertical-align: middle;
 }
 
-
+img.logo-small {
+  width: 30px;
+  height: 60px;
+  display: none;
+}
 
 /*******FOOTER*******/
 
@@ -283,7 +287,7 @@ footer ul.mid-buttons {
 
 footer ul.mid-buttons li {
   padding: 0px 20px;
-  font-size: 1.5rem;
+  font-size: 1rem;
 
 }
 
@@ -516,3 +520,68 @@ ul.home li:active .green-c-hover{
 
 
 /******MEDIA*******/
+
+@media (max-width:1100px){
+  nav.menu ul.d-flex {
+    flex-wrap: wrap;
+  }
+
+  .deck {
+    flex-wrap: wrap;
+  }
+ 
+  .card {
+    width: calc(100% / 4);
+  }
+
+  .left-icons {
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width:700px){
+
+  .card {
+    width: calc(100% / 2);
+  }
+  
+  .mid-foot {
+    width: 50%;
+  }
+
+}
+
+@media (max-width:600px){
+
+  aside {
+    width: 50px;
+    align-items: center;
+    padding: 5px;
+    justify-content: space-between;
+  }
+
+   /* .mid-foot {
+    padding: 10px 20px;
+   } */
+
+  img.logo-small {
+   
+    display: block;
+  }
+  
+ 
+  div.playlist, img.logo-m, ul.home span, ul.list-playlist, span.install, .user hr, span.nome-utente {
+    display: none;
+  }
+  
+  ul.home {
+    justify-self: flex-start;
+  }
+
+  div.user {
+  
+    text-align: center;
+   
+  }
+}
