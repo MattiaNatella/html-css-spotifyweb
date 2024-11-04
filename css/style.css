@@ -35,6 +35,7 @@ img {
   width: 100%;
 }
 
+
 /*****************UTILITY************/
 
 .container {
@@ -59,8 +60,29 @@ img {
 
 /*******MAIN**********/
 
+  /********MAIN-TOP****/
+  
+  .main-top {
+    justify-content: end;
+  }
+  
+  button {
+    background-color: #080B12;
+    color: white;
+    font-weight: bold;
+    padding: 10px 40px;
+    border: 2px solid white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border-radius: 36px;
+ 
+  }
 
+  
 
+    /********MAIN-TOP****/
+  
 .container-main {
   width: 100%;
   overflow: auto;
@@ -102,8 +124,10 @@ list-style: none;
 }
 
 .card {
+  position: relative;
   padding: 20px 10px 10px 10px;
   width: calc(100% / 6);
+  z-index: 1;
 }
 
 div.card.tonda img{
@@ -125,6 +149,10 @@ aside {
 ul.list-playlist {
   flex-grow: 1;
   overflow: auto;
+}
+
+.list-playlist li {
+  font-weight: bold;
 }
 
 aside h2 {
@@ -349,3 +377,136 @@ div.left-icons i {
   padding: 5px;
 }
 
+/***********HOVER*********/
+
+button:hover {
+  font-size: 0.9rem;
+  margin: 18px 7px 18px 7px;
+  cursor: pointer;
+
+}
+
+a:hover, li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+div.playlist:hover i, div.playlist:hover span {
+  color: white;
+  cursor: pointer;
+}
+
+div.user:hover i.fa-arrow-alt-circle-down, div.user:hover span.install {
+  color: white;
+  cursor: pointer;
+}
+
+.brano:hover {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+i.fa-heart:hover, i.fa-folder:hover {
+  color: white;
+  cursor: pointer;
+}
+
+i.fa-circle-play:hover{
+  font-size: 2.7rem;
+  cursor: pointer;
+}
+
+.elapse-bar:hover .progress {
+  cursor: pointer;
+  background-color: greenyellow;
+}
+
+li.elapse-bar:hover div.progress {
+  background-color: greenyellow;
+}
+
+.menu ul li:hover a{
+  text-decoration: none;
+  color: white
+ }
+
+div.bg-opacity {
+  background-color: #000000;
+  opacity: 0.5;
+  width: 255px;
+  height: 255px;
+  position: absolute;
+  top: 20px;
+  display: none;
+  z-index: 1;
+}
+
+.card:hover div.bg-opacity {
+  display: block;
+}
+
+.card i.fa-circle-play {
+  position: absolute;
+  color: white;
+  top: 29%;
+  left: 37%;
+  font-size: 5rem;
+  z-index: -1;
+}
+
+.card:hover i.fa-circle-play {
+  z-index: 1;
+}
+
+.point-elapse {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  z-index: -1;
+}
+
+.elapse-bar:hover .point-elapse {
+  z-index: 1;
+  cursor: pointer;
+}
+
+.elapse-bar, li.elapse-bar {
+  align-items: center;
+}
+
+.green-r-hover {
+  background-color: greenyellow;
+  width: 35px;
+  height: 3px;
+  border-radius: 20px;
+  margin-top: 5px;
+  z-index: -1;
+
+}
+
+nav.menu ul li{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+nav.menu ul li:active .green-r-hover {
+  z-index: 1;
+}
+
+.green-c-hover {
+  position: absolute;
+  background-color: greenyellow;
+  width: 3px;
+  height: 35px;
+  left: 0;
+  z-index: -1;
+  
+}
+
+ul.home li:active .green-c-hover{
+  z-index: 1;
+}
