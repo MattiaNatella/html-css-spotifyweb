@@ -453,10 +453,12 @@ div.bg-opacity {
   left: 37%;
   font-size: 5rem;
   z-index: -1;
+  display: none;
 }
 
 .card:hover i.fa-circle-play {
   z-index: 1;
+  display: block;
 }
 
 .point-elapse {
@@ -510,3 +512,7 @@ nav.menu ul li:active .green-r-hover {
 ul.home li:active .green-c-hover{
   z-index: 1;
 }
+
+
+
+/******MEDIA*******/
