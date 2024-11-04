@@ -181,51 +181,26 @@ footer .footer-container {
   display: flex;
   height: 90px;
   width: 100%;
+  padding: 10px;
   justify-content: space-between;
   align-items: center;
-  background-color: aquamarine;
+
 }
 
 footer .mid-foot {
   height: 90px;
   width: 40%;
-  background-color: burlywood;
+  padding-top: 10px;;
 }
 
 footer .right-foot {
   width: 230px;
+ 
 }
 
 footer .left-foot {
   width: 230px;
-}
-
-
-
-footer .card{
-  padding: 20px;
-  height: 90px;
-  align-items: center;
-  background-color: red;
-}
-
-
-footer .card div{
-  padding: 15px;
-  background-color: chocolate;
-}
-
-
-span.gruppo {
-color: white;
-font-size: 0.8rem;
-font-weight: bold;
-}
-
-span.brano {
-color: #656565;
-font-weight: bold;
-font-size: 0.6rem;
+  height: 100%;
 }
 
 ul.d-flex {
@@ -236,19 +211,18 @@ ul.d-flex {
 
 footer .play-buttons {
   height: 60%;
-  background-color: purple;
-
 }
 
 footer ul.mid-buttons {
   height: 100%;
   align-items: center;
   color: white;
+  padding: 10px;
 }
 
 
 footer ul.mid-buttons li {
-  padding: 0 20px;
+  padding: 0px 20px;
   font-size: 1.5rem;
 
 }
@@ -262,11 +236,12 @@ footer .elapse {
   justify-content: space-between;
   align-items: center;
   height: 40%;
+  padding: 10px 0 10px 0;
 }
 
 footer .elapse-bar {
   background-color: grey;
-  height: 10px;
+  height: 6px;
   width: 80%;
   border-radius: 20px;
 }
@@ -276,7 +251,63 @@ footer .progress {
   height: 100%;
   background-color: white;
   border-radius: 20px;
+  padding-bottom: 5px;;
+}
+
+ul.right-menu {
+  width: 100%;
+}
+
+footer .right-menu li{
+padding: 0 10px;
+}
+
+footer .right-menu li a{
+  color: white;
+}
+
+footer ul.right-menu .progress {
+  width: 20%;
+  height: 100%;
+  background-color: white;
+  border-radius: 20px;
+  margin-left: -10px;
+}
+
+.left-bar {
+  height: 100%;
+}
+
+.left-bar img {
+  width: 30%;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+div.info-brano {
+  align-self: center;
+}
+
+.left-bar span {
+  display: block;
+  font-size: 0.7rem;
+  vertical-align: middle;
+  font-weight: bold;
+
+}
+
+span.gruppo {
+  font-size: 1rem;
+  color: white;
 }
 
 
 
+div.left-icons {
+  align-items: center;
+  padding-left: 10px;
+}
+
+div.left-icons i {
+  padding: 5px;
+}
